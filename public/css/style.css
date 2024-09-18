@@ -1,0 +1,14 @@
+.upp1 {
+    background-color: aqua;
+    display: flex;
+    margin-bottom: 2%;
+    justify-content: space-around;
+}
+.leftpanel {
+    background-color: aliceblue;
+    margin-top: 2%;
+    display: flex;
+       flex-direction: column;
+    align-items: center;
+
+}
