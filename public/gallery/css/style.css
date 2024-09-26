@@ -1,0 +1,36 @@
+.wrapper{
+    width: 555px;
+    margin: 20px auto;
+    background: #f0f0f0;
+    padding: 20px 10px 20px 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+.front{
+   max-width: 150px;
+    max-height: 120px;
+    transition: all .5s;
+}
+.item{
+    background: #f0f0f0;
+    width: 170px;
+    height: 150px;
+    float: left;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+    margin: 0 15px 15px 0;
+
+}
+.item > div {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+
+}
+
+.front:hover{
+    box-shadow: 0 0 10px #3636c4;
+
+}
