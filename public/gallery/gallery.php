@@ -1,6 +1,6 @@
 <?php
 include 'functions.php';
-$dir = 'images';
+$dir = 'images/';
 $images =get_images($dir);
 ?>
 <!doctype html>
@@ -13,10 +13,18 @@ $images =get_images($dir);
 
 </head>
 <body>
+<header>
+    <nav>
+        <ul>
+            <li><a href="../../index.php">Головна</a></li>
+            <li><a href="../my_project/my_project.php">Мої проєкти</a></li>
+            <li><a href="../master_class/m_k/m_k.php">Майстер-класи</a></li>
+            <li><a href="https://www.instagram.com/ekaterina_lightart/">Instagram</a></li>
+        </ul>
+    </nav>
+</header>
 <div class="wrapper">
     <div class="gallery">
-        <?php echo "<pre>" .print_r($images,true). "</pre>"; ?>
-        <?php var_dump($images); ?>
         <?php foreach ($images as $image):  ?>
         <div class="item">
         <div>
@@ -26,13 +34,6 @@ $images =get_images($dir);
         </div>
         </div>
         <?php endforeach; ?>
-        <div class="item">
-            <div>
-                <a data-lightbox="lightbox"  href="images/1.jpg" >
-                    <img class="front" src="images/1.jpg" alt="">
-                </a>
-            </div>
-        </div>
     </div>
 </div>
 <script src="js/lightbox-plus-jquery.js" > </script>
